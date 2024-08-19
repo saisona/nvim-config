@@ -52,7 +52,6 @@ return {
       go = function(config)
         -- Path to your.env file
         local env_file_path = vim.fn.expand "%:p:h" .. "/.env"
-        print("env path is ", env_file_path)
 
         -- Load environment variables from.env file
         local env_vars = load_env_from_file(env_file_path)
