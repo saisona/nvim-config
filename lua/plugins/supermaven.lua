@@ -7,7 +7,8 @@ return {
       accept_word = "<C-l>",
     },
     ignore_filetypes = {
-      TelescopePrompt = true,
+      TelescopePrompt = false,
+      TelescopeResults = false,
       FTerm = true,
       ["neo-tree"] = true,
     },
