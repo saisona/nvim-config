@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.colorscheme.everforest" },
   -- import/override with your plugins folder
 }
