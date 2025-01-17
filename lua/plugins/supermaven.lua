@@ -9,8 +9,8 @@ return {
     ignore_filetypes = {
       TelescopePrompt = false,
       TelescopeResults = false,
-      FTerm = true,
-      ["neo-tree"] = true,
+      FTerm = false,
+      ["neo-tree"] = false,
     },
   },
 }

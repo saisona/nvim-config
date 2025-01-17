@@ -58,7 +58,7 @@ return {
         config.adapters = {
           type = "executable",
           command = "dlv", -- Path to delve executable
-          args = { "dap" },
+          args = { "dap", "-l 127.0.0.1:38697", "--log", "--log-output='dap'" },
         }
         config.configurations = {
           {
@@ -66,6 +66,12 @@ return {
             request = "launch",
             name = "Launch",
             program = "${file}", -- Launch the current file
+          },
+          {
+            type = "go",
+            request = "launch",
+            name = "Launch from cmd/*",
+            program = "cmd/*", -- Launch the current file
           },
         }
         set_env_in_dap_config(config, env_vars)
